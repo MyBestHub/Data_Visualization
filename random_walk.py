@@ -3,7 +3,7 @@ from random import choice
 
 class Random_walk():
 
-    def __init__(self, num_points=5000):
+    def __init__(self, num_points=2000):
         self.num_points = num_points
         self.x_values = [0]
         self.y_values = [0]
@@ -23,7 +23,7 @@ class Random_walk():
             if x_step == 0 and y_step == 0:  # Skip the steps that go nowhere
                 continue
 
-            # Calculate new position
+            # Calculate new position, we add value in x_step to the last value stored in x_values by adding [-1], same with Y
             x = self.x_values[-1] + x_step
             y = self.y_values[-1] + y_step
 
