@@ -19,8 +19,11 @@ while True:
     # Show 1st and last point, help the user to follow better
     ax.scatter(0, 0, c='purple', edgecolors='red',
                s=60)                                      # beginning point (0,0)
-    ax.scatter(rw.x_values[-1], rw.y_values[-1],          # Last point (since it start with 0, we do -1 to get the last number(example if it end at 5000, its actually 5001 so we do -1 for last # which is 5000))
+    ax.scatter(rw.x_values[-1], rw.y_values[-1],          # Last point (since it start with 0, we do -1 to get the last number(example if it end at 5000, its actually 5001 so we do -1))
                c='orange', edgecolors='red', s=60)
+
+    # ax.get_xaxis().set_visible(False)                    (Remove X axis)
+    # ax.get_yaxis().set_visible(False)                    (Remove Y axis)
 
     plt.show()
 

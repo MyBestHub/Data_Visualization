@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 plt.style.available
 
-# Pages 435
+# Pages 444
 
 input_values = range(1, 1001)
 squares = [x**2 for x in input_values]
