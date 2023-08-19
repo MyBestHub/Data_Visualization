@@ -15,6 +15,13 @@ while True:
     point_number = range(rw.num_points)
     ax.scatter(rw.x_values, rw.y_values, c=point_number,
                cmap=plt.cm.Blues, edgecolors='none', s=12)  # edgecolors to get ride of the black outline around the points
+
+    # Show 1st and last point, help the user to follow better
+    ax.scatter(0, 0, c='purple', edgecolors='red',
+               s=60)                                      # beginning point (0,0)
+    ax.scatter(rw.x_values[-1], rw.y_values[-1],          # Last point (since it start with 0, we do -1 to get the last number(example if it end at 5000, its actually 5001 so we do -1 for last # which is 5000))
+               c='orange', edgecolors='red', s=60)
+
     plt.show()
 
     walk_again = input("Do you want to keep walking? (y/n): ")
