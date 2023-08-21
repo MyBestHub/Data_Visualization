@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 from random_walk import Random_walk
+from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
 
 # Thats when we do the random walk
 
