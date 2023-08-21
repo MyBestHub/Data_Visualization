@@ -17,9 +17,15 @@ ax.scatter(input_values, squares, c=squares, cmap=plt.cm.cividis, s=10)
 
 ax.set_title("Square Numbers", fontsize=24)
 ax.set_xlabel("Value", fontsize=14)
-ax.set_ylabel("Square of Value", fontsize=14, color='blue')
-ax.tick_params(axis='both', labelsize=12)
+ax.set_ylabel("Square of Value", fontsize=14, color='black')
+ax.tick_params(axis='both', labelsize=12, labelcolor='tab:blue',  # labelcolor for the color name given to each axis, color is just for the tick color
+               color='tab:green', size=4, width=2, which="major", direction="out")
+
+# Adding any value = fig.patch  (so I can add a facecolor)
+color_test = fig.patch
+color_test.set_facecolor('#FFD39B')
 
 ax.axis([0, 1100, 0, 1100000])  # Specify the range.(#1, #2) = X, (#3, #4) = Y
+
 
 plt.show()

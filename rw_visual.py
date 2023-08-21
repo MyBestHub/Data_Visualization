@@ -28,8 +28,14 @@ while True:
     ax.set_xlabel("Horizontal Walk (x axis)", fontsize=14)
     ax.set_ylabel("Vertical Walk (y axis)", fontsize=14)
 
+    ax.tick_params(axis='both', labelsize=14, labelcolor='tab:blue',
+                   color='tab:blue', size=7, width=2)
+
     # ax.get_xaxis().set_visible(False)                    (Remove X axis)
     # ax.get_yaxis().set_visible(False)                    (Remove Y axis)
+
+    color_face = fig.patch  # Adding a color around the graph
+    color_face.set_facecolor('#E6E6FA')
 
     plt.show()
 
