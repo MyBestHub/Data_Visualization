@@ -17,8 +17,8 @@ while True:
 
     # range to generate a list of # equal to # of point in the walk
     point_number = range(rw.num_points)
-    ax.scatter(rw.x_values, rw.y_values, c=point_number,
-               cmap=plt.cm.Blues, edgecolors='none', s=5)  # edgecolors to get ride of the black outline around the points
+    scatter = ax.scatter(rw.x_values, rw.y_values, c=point_number,
+                         cmap=plt.cm.Blues, edgecolors='none', s=5)  # edgecolors to get ride of the black outline around the points
 
     # Show 1st and last point, help the user to follow better
     ax.scatter(0, 0, c='purple', edgecolors='red',
@@ -33,14 +33,17 @@ while True:
                    color='tab:blue', size=7, width=2, direction="out")
 
     ax.xaxis.set_minor_locator(MultipleLocator(5))
-    ax.tick_params(which='minor', length=5, color='r',
-                   width=1.5, direction="out")
+    ax.tick_params(which='minor', length=4, color='r',
+                   width=1, direction="out")
 
     # ax.get_xaxis().set_visible(False)                    (Remove X axis)
     # ax.get_yaxis().set_visible(False)                    (Remove Y axis)
 
     color_face = fig.patch  # Adding a color around the graph
-    color_face.set_facecolor('#E6E6FA')
+    color_face.set_facecolor('#E8E8E8')
+
+    cbar = plt.colorbar(scatter, ax=ax, aspect=10, shrink=0.8)
+    cbar.set_label('Walk Number', fontsize=12)
 
     plt.show()
 
