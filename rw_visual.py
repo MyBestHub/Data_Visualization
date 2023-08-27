@@ -26,8 +26,8 @@ while True:
     ax.scatter(rw.x_values[-1], rw.y_values[-1],          # Last point (since it start with 0, we do -1 to get the last number(example if it end at 5000, its actually 5001 so we do -1))
                c='orange', edgecolors='red', s=60)
 
-    ax.set_xlabel("Horizontal Walk (x axis)", fontsize=14)
-    ax.set_ylabel("Vertical Walk (y axis)", fontsize=14)
+    ax.set_xlabel("Horizontal Walk (x axis)", fontsize=15)
+    ax.set_ylabel("Vertical Walk (y axis)", fontsize=15)
 
     ax.tick_params(axis='both', labelsize=14, labelcolor='tab:blue',
                    color='tab:blue', size=7, width=2, direction="out")
@@ -47,6 +47,6 @@ while True:
 
     plt.show()
 
-    walk_again = input("Do you want to keep walking? (y/n): ")
+    walk_again = input("Continue the walk? (y/n): ")
     if walk_again == 'n':
         break
