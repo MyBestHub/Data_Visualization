@@ -45,6 +45,7 @@ while True:
     cbar = plt.colorbar(scatter, ax=ax, aspect=10, shrink=0.8)
     cbar.set_label('Walk Number', fontsize=12)
 
+    plt.tight_layout()
     plt.show()
 
     walk_again = input("Continue the walk? (y/n): ")
