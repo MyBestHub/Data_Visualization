@@ -43,7 +43,7 @@ while True:
     color_face.set_facecolor('#E8E8E8')
 
     cbar = plt.colorbar(scatter, ax=ax, aspect=10, shrink=0.8)
-    cbar.set_label('Walk Number', fontsize=12)
+    cbar.set_label('Number Of Walks', fontsize=12)
 
     plt.tight_layout()
     plt.show()
