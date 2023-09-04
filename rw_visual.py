@@ -18,7 +18,7 @@ while True:
     # range to generate a list of # equal to # of point in the walk
     point_number = range(rw.num_points)
     scatter = ax.scatter(rw.x_values, rw.y_values, c=point_number,
-                         cmap=plt.cm.Blues, edgecolors='none', s=7)  # edgecolors to get ride of the black outline around the points
+                         cmap=plt.cm.plasma, edgecolors='none', s=7)  # edgecolors to get ride of the black outline around the points
 
     # Show 1st and last point, help the user to follow better
     ax.scatter(0, 0, c='purple', edgecolors='red',
