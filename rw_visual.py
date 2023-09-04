@@ -42,8 +42,8 @@ while True:
     color_face = fig.patch  # Adding a color around the graph
     color_face.set_facecolor('#E8E8E8')
 
-    cbar = plt.colorbar(scatter, ax=ax, aspect=10, shrink=0.8)
-    cbar.set_label('Number Of Walks', fontsize=12)
+    cbar = plt.colorbar(scatter, ax=ax, aspect=10, shrink=0.7)
+    cbar.set_label('Number Of Walks', fontsize=11)
 
     plt.tight_layout()
     plt.show()
