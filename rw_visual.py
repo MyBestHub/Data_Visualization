@@ -26,8 +26,8 @@ while True:
     ax.scatter(rw.x_values[-1], rw.y_values[-1],          # Last point (since it start with 0, we do -1 to get the last number(example if it end at 5000, its actually 5001 so we do -1))
                c='orange', edgecolors='red', s=60)
 
-    ax.set_xlabel("Horizontal Walk (x axis)", fontsize=15)
-    ax.set_ylabel("Vertical Walk (y axis)", fontsize=15)
+    ax.set_xlabel("Horizontal Walk (x axis)", fontsize=17)
+    ax.set_ylabel("Vertical Walk (y axis)", fontsize=17)
 
     ax.tick_params(axis='both', labelsize=14, labelcolor='tab:blue',
                    color='tab:blue', size=7, width=2, direction="out")
@@ -43,7 +43,7 @@ while True:
     color_face.set_facecolor('#E8E8E8')
 
     cbar = plt.colorbar(scatter, ax=ax, aspect=10, shrink=0.7)
-    cbar.set_label('Number Of Walks', fontsize=11)
+    cbar.set_label('Number Of Walks', fontsize=12)
 
     plt.tight_layout()
     plt.show()
