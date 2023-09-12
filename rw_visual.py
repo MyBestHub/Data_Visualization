@@ -42,6 +42,7 @@ while True:
     color_face = fig.patch  # Adding a color around the graph
     color_face.set_facecolor('#E8E8E8')
 
+    # aspect is for the width size
     cbar = plt.colorbar(scatter, ax=ax, aspect=12, shrink=0.7)
     cbar.set_label('Amount Of Walks', fontsize=12)
 
