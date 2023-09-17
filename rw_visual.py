@@ -26,8 +26,8 @@ while True:
     ax.scatter(rw.x_values[-1], rw.y_values[-1],          # Last point (since it start with 0, we do -1 to get the last number(example if it end at 5000, its actually 5001 so we do -1))
                c='orange', edgecolors='red', s=60)
 
-    ax.set_xlabel("Horizontal Walk (x axis)", fontsize=17)
-    ax.set_ylabel("Vertical Walk (y axis)", fontsize=17)
+    ax.set_xlabel("Horizontal Walk (x axis)", fontsize=18)
+    ax.set_ylabel("Vertical Walk (y axis)", fontsize=18)
 
     ax.tick_params(axis='both', labelsize=14, labelcolor='tab:blue',
                    color='tab:blue', size=7, width=2, direction="out")
