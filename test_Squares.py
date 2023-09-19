@@ -5,7 +5,7 @@ plt.style.available
 
 # Pages 444
 
-input_values = range(1, 1001)
+input_values = range(1, 501)
 squares = [x**2 for x in input_values]
 
 plt.style.use('bmh')
