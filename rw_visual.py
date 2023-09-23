@@ -12,7 +12,7 @@ while True:
     # Plotting the point for the walk
     plt.style.use('classic')
 
-    # To fit the data more nicely, we can add inside plot.sublots() this => figsize=(15, 10)
+    # To fit the data more nicely, we can add inside plot.sublots() this => figsize=(11, 8)
     fig, ax = plt.subplots(figsize=(11, 8))
 
     # range to generate a list of # equal to # of point in the walk
