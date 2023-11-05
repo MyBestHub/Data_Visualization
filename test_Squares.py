@@ -17,7 +17,7 @@ fig, ax = plt.subplots()
 scatter = ax.scatter(input_values, squares, c=squares,
                      cmap=plt.cm.cividis, s=10)
 
-
+#set_title to add the main title at the top
 ax.set_title("Square Numbers", fontsize=24)
 ax.set_xlabel("Value", fontsize=14)
 ax.set_ylabel("Square of Value", fontsize=14, color='black')
